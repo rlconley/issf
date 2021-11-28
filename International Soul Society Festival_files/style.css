@@ -1,0 +1,282 @@
+/*
+Theme Name: Soul Society 2013
+Theme URI: http://InternationalSoulSociety.com
+Description: A Wordpress theme for the International Soul Society Festival
+Author: Thomas Wilburn
+Author URI: http://ThomasWilburn.net
+*/
+
+/* RESET */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background: #F8F8F8;
+  font-family: "Roboto Slab", Calibri, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/wordcloud.jpg);
+}
+
+h1, h2, h3, h4 { margin-top: 0px; }
+
+/* RESPONSIVE */
+
+.grid {
+  float: left;
+}
+
+.grid-right {
+  float: right;
+}
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 {
+  width: 100%;
+}
+
+.gutter {
+  padding: 1em;
+}
+
+.large-only, .medium-only, .small-hidden {
+  display: none;
+}
+
+.always1 { width: 8.333333% !important; }
+.always2 { width: 16.666666% !important; }
+.always3 { width: 25% !important; }
+.always4 { width: 33.333333% !important; }
+.always5 { width: 41.666666% !important; }
+.always6 { width: 50% !important; }
+.always7 { width: 58.333333% !important; }
+.always8 { width: 66.666666% !important; }
+.always9 { width: 75% !important; }
+.always10 { width: 83.333333% !important; }
+.always11 { width: 91.666666% !important; }
+
+@media (min-device-width: 500px) and (max-device-width: 799px) {
+  .grid1, .grid2, .grid3 { width: 25%; }
+  .grid4 { width: 33.333333%; }
+  .grid5, .grid6, .grid7 { width: 50%; }
+  .grid8 { width: 66.666666%; }
+  .grid9, .grid10, .grid11 { width: 75%; }
+
+  .medium-25 { width: 25% !important; }
+  .medium-33 { width: 33.333333% !important; }
+  .medium-50 { width: 50% !important; }
+  .medium-66 { width: 66.666666% !important; }
+  .medium-75 { width: 75% !important; }
+  .medium-100 { width: 100% !important; }
+
+  .small-hidden {
+    display: inherit;
+  }
+
+  .large-only, .medium-hidden, .small-only {
+    display: none; 
+  }
+
+}
+
+@media (min-device-width: 800px) {
+  .grid1 { width: 8.333333% }
+  .grid2 { width: 16.666666%; }
+  .grid3 { width: 25%; }
+  .grid4 { width: 33.333333%; }
+  .grid5 { width: 41.666666%; }
+  .grid6 { width: 50%; }
+  .grid7 { width: 58.333333%; }
+  .grid8 { width: 66.666666%; }
+  .grid9 { width: 75%; }
+  .grid10 { width: 83.333333%; }
+  .grid11 { width: 91.666666%; }
+
+  .large-only, .small-hidden {
+    display: inherit;
+  }
+
+  .large-hidden, .medium-only, .small-only {
+    display: none; 
+  }
+}
+
+.clearing {
+  clear: both;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  font-size: 0px;
+  clear: both;
+}
+
+img, iframe, object, embed {
+  max-width: 100% !important;
+}
+
+/* WP IMAGE CLASSES */
+img.alignleft {
+  float: left;
+  margin-right: 8px;
+}
+
+img.alignright {
+  float: right;
+  margin-left: 8px;
+}
+
+img.aligncenter {
+  float: none;
+  display: block;
+  margin: auto;
+}
+
+/* BRANDING */
+
+.yellow { color: #E6B100; }
+h1, h2, h3, h4, .red { color: #BB1214; }
+
+hr { border: none; border-top: 4px dotted black; border-top: 4px dotted rgba(0, 0, 0, .6); }
+
+.container {
+  // background: url(images/background_800w.jpg);
+  background-image: linear-gradient(to bottom, white, #F8F8F8);
+  background-size: 100vh;
+  background-attachment: fixed;
+  max-width: 800px;
+  margin: auto;
+  padding: 0;
+}
+
+@media (max-device-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+}
+
+a {
+  color: #BB1214;
+}
+
+/* HEADER */
+
+.header {
+  overflow: auto;
+  background: black;
+  padding: 2em 0;
+}
+
+.header h1 {
+  font-size: 0px;
+  color: transparent;
+  text-align: center;
+  padding: 1em;
+}
+
+.menu {
+  text-align: middle;
+  width: 100%;
+  font-size: 16px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, .8);
+  text-transform: uppercase;
+}
+
+.menu li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 4px 1em 0 0;
+}
+
+.menu a {
+  color: #E6B100;
+  text-decoration: none;
+}
+
+.current-menu-item a {
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-device-width: 500px) {
+  .current-menu-item a {
+    font-weight: normal;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+
+/* BODY STYLES */
+
+h2 {
+  font-size: 30px;
+}
+
+.main {
+  padding: 0 1em 4em;
+}
+
+.main .content {
+  padding: 1em;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  padding: 1em;
+  margin: 0;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 8px; 
+}
+
+.sidebar.twitter {
+  background: transparent;
+  padding: 1em 0;
+}
+
+.sidebar li {
+  display: block;
+  list-style-type: none;
+}
+
+/* PAGE STYLES */
+
+.events .schedule {
+  padding: 1em;
+}
+
+.events .date {
+  background: black;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 2em;
+  font-variant: small-caps;
+}
+
+.events .date h2 {
+  color: white;
+  margin: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 3em 0;
+  background: rgba(0, 0, 0, .5);
+  background-image: linear-gradient(to bottom, #EEE, white);
+}
