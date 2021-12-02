@@ -166,7 +166,11 @@ hr { border: none; border-top: 4px dotted black; border-top: 4px dotted rgba(0, 
 }
 
 a {
-  color: #BB1214;
+  color: #BB1214 !important;
+}
+
+span > a {
+  color: white !important;
 }
 
 /* HEADER */
@@ -280,3 +284,4 @@ h2 {
   background: rgba(0, 0, 0, .5);
   background-image: linear-gradient(to bottom, #EEE, white);
 }
+
